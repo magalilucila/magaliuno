@@ -96,11 +96,6 @@ h6 {
 .parrafo2 .mapa, .menu .menu2 .mapa {
   margin: 2rem 4rem;
 }
-.parrafo2 .mapa2, .menu .menu2 .mapa2 {
-  width: 100rem;
-  height: 50rem;
-  margin: 0rem 4rem;
-}
 
 .padreimagenesstaff {
   display: flex;

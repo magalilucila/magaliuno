@@ -101,11 +101,6 @@ h6 {
         .mapa {
             margin: 2rem 4rem;
         }
-
-        .mapa2 {
-            @include tamanos(100rem, 50rem, 0rem 4rem);
-        }
-
     }
 .padreimagenesstaff {
     @include flex;
