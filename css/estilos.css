@@ -21,6 +21,7 @@ body {
   height: 10rem;
   margin: 2rem 4rem;
   max-width: 10rem;
+  justify-content: center;
 }
 .menu h1 {
   text-align: start;
@@ -95,6 +96,10 @@ h6 {
 }
 .parrafo2 .mapa, .menu .menu2 .mapa {
   margin: 2rem 4rem;
+}
+.parrafo2 .mapa2, .menu .menu2 .mapa2 {
+  width: 40rem;
+  height: 30rem;
 }
 
 .padreimagenesstaff {
