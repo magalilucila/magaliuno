@@ -1,109 +1,127 @@
-html {font-size: 62.5%;}
-
-* {margin: 0;
-padding: 0;
+html {
+  font-size: 62.5%;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: 'Bree Serif', serif;
-    background-color:#fcd7da;
+  font-family: "Bree Serif", serif;
+  background-color: #fcd7da;
+  overflow-x: hidden;
 }
-.logo {
-    max-width: 10rem;
-    height: 10rem;
-    margin: 2rem 4rem ;
-    
-}
+
 .menu {
-    background-color: #fbf6d0;
-    
-
+  background-color: #fbf6d0;
 }
-h1 {
-    text-align:start;
-    color: blueviolet;
-    font-size: 8rem;
-    font-family:  'Dancing Script', cursive;
-    margin: 4rem 2rem;
-    
+.menu .logo {
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem 4rem;
+  max-width: 10rem;
 }
-
-.menu2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 1rem;
-    font-size: 2rem;
-    list-style: none;
-    text-decoration: none;
-    color: blueviolet;
-    align-items: center;
+.menu h1 {
+  text-align: start;
+  color: blueviolet;
+  font-size: 8rem;
+  font-family: "Dancing Script", cursive;
+  margin: 4rem 2rem;
+}
+.menu .menu2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem;
+  list-style: none;
 }
 
 h6 {
-    font-family: 'Dancing Script', cursive;
-    color:blueviolet;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 700;
-    padding: 2rem 1rem;
-}
-.titulo1 {
-    color: purple;
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: none;
-    padding: 4rem 1rem 1rem 1rem;
+  font-family: "Dancing Script", cursive;
+  color: blueviolet;
+  text-align: center;
+  text-decoration: none;
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 2rem 1rem;
 }
 
-.parrafo1 {
-    color:blueviolet;
-font-size: 2rem;
-text-align: center;
-text-decoration: none;
-margin: 1rem 2rem;
+.parrafo2, .parrafo2 .titulo1 .titulo1a, .menu .menu2 .titulo1 .titulo1a, .parrafo2 .titulo1 .titulo1a .titulo1, .parrafo2 .titulo1 .parrafo1, .menu .menu2 .titulo1 .parrafo1, .parrafo2 .titulo1 .parrafo1 .titulo1, .parrafo2 .titulo1, .menu .menu2 .titulo1, .menu .menu2 {
+  color: blueviolet;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+.parrafo2 .titulo1, .parrafo2 .titulo1 .titulo1a .titulo1, .parrafo2 .titulo1 .parrafo1 .titulo1, .menu .menu2 .titulo1 {
+  color: purple;
+  font-size: 3rem;
+  padding: 4rem 1rem 1rem 1rem;
+}
+.parrafo2 .titulo1 .parrafo1, .menu .menu2 .titulo1 .parrafo1 {
+  margin: 1rem 2rem;
+  list-style: none;
+}
+.parrafo2 .titulo1 .titulo1a, .menu .menu2 .titulo1 .titulo1a {
+  color: purple;
+  font-size: 3rem;
+  margin: 13rem 4rem 1rem 4rem;
+}
+.parrafo2 .padreimagenescursos, .menu .menu2 .padreimagenescursos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.parrafo2 .padreimagenescursos .imagenescursos, .menu .menu2 .padreimagenescursos .imagenescursos {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+}
+.parrafo2 .padreimagenescursos .imagenesinsumos, .menu .menu2 .padreimagenescursos .imagenesinsumos {
+  width: 40rem;
+  height: 40rem;
+  margin: 1rem;
+}
+.parrafo2 .padreredes, .menu .menu2 .padreredes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.parrafo2 .padreredes .redes, .menu .menu2 .padreredes .redes {
+  width: 6rem;
+  height: 6rem;
+  margin: 1rem 6rem;
+}
+.parrafo2 .mapa, .menu .menu2 .mapa {
+  margin: 2rem 4rem;
+}
+.parrafo2 .mapa2, .menu .menu2 .mapa2 {
+  width: 100rem;
+  height: 50rem;
+  margin: 0rem 4rem;
 }
 
-.imagenesstaff {
-    width: 31rem;
-    height: 31em;
-    padding: 1rem ;
+.padreimagenesstaff {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.padreimagenesstaff .imagenesstaff {
+  width: 30rem;
+  height: 40rem;
+  margin: 1rem;
 }
 
-.titulo1a {
-        
-        color: purple;
-        font-size: 3rem;
-        text-align: center;
-        text-decoration: none;
-        margin: 13rem 4rem 1rem 4rem;
-            }
-    
-.redes {
-    width: 6rem;
-    height: 6rem;
-    margin: 1rem 6rem;
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #fbf6d0;
+}
+footer .direccion {
+  color: purple;
+  padding-top: 1rem;
 }
 
-
-.ubicacion {
-    list-style: none;
-}
-
-.redescontacto {
-    width: 6rem;
-    height: 6rem;
-    margin: 0rem 0rem 0rem 40rem;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    }
-
-.caja { 
-width: 31rem;
-height: 31rem;
-}
-
+/*# sourceMappingURL=estilos.css.map */

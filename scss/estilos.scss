@@ -1,0 +1,126 @@
+@import "variables"; 
+
+@mixin tamanos($width, $height, $margin){
+    width: $width;
+    height: $height;
+    margin: $margin;
+}
+
+@mixin flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+html {font-size: 62.5%;}
+
+* {margin: 0;
+padding: 0;
+}
+
+
+body {
+    font-family: 'Bree Serif', serif;
+    background-color:#fcd7da;
+    overflow-x: hidden ;
+}
+
+.menu {
+    background-color: #fbf6d0;
+
+    .logo {
+    @include tamanos(10rem, 10rem , 2rem 4rem);
+    max-width: 10rem;
+    }
+    h1 {
+    text-align:start;
+    color: $colorparrafos;
+    font-size: 8rem;
+    font-family:  'Dancing Script', cursive;
+    margin: 4rem 2rem;
+    }
+    .menu2 {
+        @include flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+    @extend .parrafo2;
+    list-style: none;
+    }
+}
+
+h6 {
+    font-family: 'Dancing Script', cursive;
+    color: $colorparrafos;
+    text-align: center;
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 2rem 1rem;
+}
+.parrafo2 {
+        color: $colorparrafos;
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: none;
+        
+        .titulo1 {
+            @extend .parrafo2;
+            color: $colortitulos;
+            font-size: 3rem;
+            padding: 4rem 1rem 1rem 1rem;
+            .parrafo1 {
+            @extend .parrafo2;
+            margin: 1rem 2rem;
+            list-style: none;
+            }
+            .titulo1a {
+                @extend .parrafo2;
+                color: $colortitulos;
+                font-size: 3rem;
+                margin: 13rem 4rem 1rem 4rem;
+                    }
+            }
+        .padreimagenescursos {
+            @include flex;
+            justify-content: space-evenly;
+            .imagenescursos{
+            @include tamanos(20rem, 20rem, 1rem);
+            }
+            .imagenesinsumos {
+            @include tamanos(40rem, 40rem, 1rem);
+            }
+        }
+        .padreredes {
+            @include flex;
+            justify-content: center;
+        .redes {
+            @include tamanos(6rem, 6rem, 1rem 6rem);
+            }
+        }
+        .mapa {
+            margin: 2rem 4rem;
+        }
+
+        .mapa2 {
+            @include tamanos(100rem, 50rem, 0rem 4rem);
+        }
+
+    }
+.padreimagenesstaff {
+    @include flex;
+    justify-content: space-evenly;
+.imagenesstaff {
+@include tamanos(30rem, 40rem, 1rem);
+}
+}
+
+footer {
+    @include flex;
+    justify-content: center;
+    background-color: #fbf6d0;
+    .direccion {
+    color: $colortitulos;
+    padding-top:  1rem ;
+    }
+}
