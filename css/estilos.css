@@ -16,12 +16,16 @@ body {
 .menu {
   background-color: #fbf6d0;
 }
-.menu .logo {
+.menu .padrelogo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.menu .padrelogo .logo {
   width: 10rem;
   height: 10rem;
   margin: 2rem 4rem;
   max-width: 10rem;
-  justify-content: center;
 }
 .menu h1 {
   text-align: start;
@@ -98,7 +102,7 @@ h6 {
   margin: 2rem 4rem;
 }
 .parrafo2 .mapa2, .menu .menu2 .mapa2 {
-  width: 40rem;
+  width: 30rem;
   height: 30rem;
 }
 
